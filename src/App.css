@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    box-sizing: border-box;
+    font-family: Nabla;
+    background-image: url(../public/Images/bk1.jpg);
+    background-size: cover;
+    color: rgb(201, 83, 15);
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    background-image: url(../public/Images/bk4.webp);
+    background-repeat: no-repeat;
+    /* background-color: rgb(28, 143, 243); */
+    background-size: contain;
+    background-position: 0px -270px;
+    width: 100%;
+    max-width: 1050px;
+    padding: 0 15px;
+    margin: 7rem auto;
+    font-size: 70px;
+    border-radius: 15px 50px;
+    /* border: solid blue 7px; */
+    border-style: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Beers {
+    min-height: 300px;
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+    color: rgb(192, 24, 198);
+    line-height: 1.4;
+    
+    font-size: 100px;
+    font-weight: 800;
+    text-align: center;
+    justify-content: center;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.beer-items {
+    max-width: 1024px;
+    margin: 4em auto;
+    column-count: 1;
+    column-gap: 20px;
+    padding: 0 5em;
+    
+}
+
+.beer-item{
+    page-break-inside: avoid;
+    padding: 0 2em 2em;
+}
+
+.beer-item > p {
+    font-size: 15px;
+    color: yellow;
 }
